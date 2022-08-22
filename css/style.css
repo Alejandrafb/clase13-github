@@ -1,19 +1,21 @@
 *{
     margin: 0;
     padding: 0;
-   box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .header{
     display: flex;
-    background-color: rgb(180, 103, 58);
+    background-image:linear-gradient(to right, brown,rgb(255, 121, 11));
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .header img {
     width: 5rem;
     padding: 8px;
+    transform:skew(20deg);
 }
 .header ul {
     display: flex;
@@ -22,6 +24,9 @@
     justify-content: space-around;
     padding: 10px;
     font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.header ul li:hover{
+    font-weight: bolder;
 }
 .bannerHome {
     width: 1365px;
@@ -52,18 +57,11 @@
 .boton {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;  
-    
-}
-h2 {
-    color: chocolate;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center;    
 }
 
 .footer {
-    background-color: rgb(180, 103, 58);
+    background-image:linear-gradient(to right, brown,rgb(255, 121, 11));
 }
 
 .redes {
@@ -75,6 +73,7 @@ h2 {
 
 .logoFooter {
     height: 47px;
+    transform:skew(16deg);
 
 }
 
@@ -102,6 +101,50 @@ footer .derechosA {
      border-radius: 50%;
 }
 
-.grid-container img{
-    max-height: 300px;
+.grid-container div:hover{ 
+    background-color: rgb(236, 124, 48);
+    width: 18rem;
+}
+ /* PAGINA TIENDAS */
+.banner-tiendas{
+    display:block;
+    width: 300px;
+    height: 320px;
+    margin: auto;
+
+}
+h2 {
+    color: chocolate;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    animation-name: cambiotitulo;
+    animation-duration: 20s;
+}
+
+ 
+@keyframes cambiotitulo{
+    0%{
+        color: chocolate;
+        font-size: 25px;
+    }
+    25%{
+
+    color: rgb(231, 66, 66);
+
+    }
+    50%
+    {
+        color: rgb(238, 188, 26);
+        
+
+    }
+    75%{
+        color: rgb(102, 56, 19);
+        
+    }
+     100%{
+        color: rgb(151, 72, 20);
+        font-size: 25px;
+     }
 }
