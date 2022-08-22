@@ -4,6 +4,104 @@
    box-sizing: border-box;
 }
 
-h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.header{
+    display: flex;
+    background-color: rgb(180, 103, 58);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    width: 5rem;
+    padding: 8px;
+}
+.header ul {
+    display: flex;
+    list-style: none;
+    width: 100vw;
+    justify-content: space-around;
+    padding: 10px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.bannerHome {
+    width: 1365px;
+    height: 273px;
+}
+.productos-destacados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center  
+}
+.productos-destacados .productos{
+    width: 18rem;
+    padding: 1rem;
+    background-color: rgb(212, 207, 207);
+    border-radius: 30px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.productos-destacados .productos:hover{
+    box-shadow: 10px 10px 11px rgb(219, 212, 212);
+    background-color: rgb(247, 197, 164);
+    width: 20rem;
+}
+.boton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    
+}
+h2 {
+    color: chocolate;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.footer {
+    background-color: rgb(180, 103, 58);
+}
+
+.redes {
+    display: flex;
+    height: 47px;
+    align-content: center;
+    justify-content: center;
+}
+
+.logoFooter {
+    height: 47px;
+
+}
+
+footer .derechosA {
+    display: flex;
+    color: rgb(17, 10, 15);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* PÁGINA PRODUCTOS */
+.grid-container{
+    max-width: 850px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    grid-row-gap: 15px;
+}
+.grid-container div{
+     width: 250px;
+     height: 250px;
+     overflow: hidden;
+     border-radius: 50%;
+}
+
+.grid-container img{
+    max-height: 300px;
 }
